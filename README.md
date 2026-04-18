@@ -8,7 +8,7 @@ and commits the result back to `main`. ArgoCD picks up the change and syncs the
 cluster — the Helm chart itself is referenced from the k8s repo, not here.
 
 To onboard a new service, create `service/<service>/<env>/values.yaml` files seeded
-with `image.tag: "0.0.0"` for each environment, following the same convention used
+with `image.tag: "0.0.1"` for each environment, following the same convention used
 by `django-angular-boilerplate`. No ArgoCD Application manifests, Kustomize overlays,
 or chart files belong here.
 
