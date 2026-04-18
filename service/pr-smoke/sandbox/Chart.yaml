@@ -1,0 +1,11 @@
+apiVersion: v2
+name: pr-smoke-sandbox
+description: Throwaway target for the build-eks PR smoke in ActionsCI/reusable-workflows
+type: application
+version: 0.1.0
+appVersion: "0.0.0"
+dependencies:
+  - name: pr-smoke
+    alias: service
+    version: 0.0.0-seed
+    repository: oci://01234567890.dkr.ecr.us-west-1.amazonaws.com/helm
